@@ -4,18 +4,14 @@
 Classification
 ===============
 
-
-
 ______
 
 
 Linear Models
-----------------------
-
-
+-------------
 
 Linear SVC
-~~~~~~~~~~~~~
+~~~~~~~~~~
 
 .. currentmodule:: verticapy.machine_learning.vertica
 
@@ -52,18 +48,18 @@ Linear SVC
    LinearSVC.prc_curve
    LinearSVC.predict
    LinearSVC.predict_proba
+   LinearSVC.register
    LinearSVC.report
    LinearSVC.roc_curve
    LinearSVC.score
    LinearSVC.set_params
    LinearSVC.summarize
+   LinearSVC.to_binary
    LinearSVC.to_memmodel
    LinearSVC.to_pmml
    LinearSVC.to_python
    LinearSVC.to_sql
    LinearSVC.to_tf
-
-
 
 **Attributes:**
 
@@ -71,6 +67,7 @@ Linear SVC
    :toctree: api/
 
    LinearSVC.object_type
+   LinearSVC.classes_
 
 Logistic Regression
 ~~~~~~~~~~~~~~~~~~~~~
@@ -110,18 +107,18 @@ Logistic Regression
    LogisticRegression.prc_curve
    LogisticRegression.predict
    LogisticRegression.predict_proba
+   LogisticRegression.register
    LogisticRegression.report
    LogisticRegression.roc_curve
    LogisticRegression.score
    LogisticRegression.set_params
    LogisticRegression.summarize
+   LogisticRegression.to_binary
    LogisticRegression.to_memmodel
    LogisticRegression.to_pmml
    LogisticRegression.to_python
    LogisticRegression.to_sql
    LogisticRegression.to_tf
-
-
 
 **Attributes:**
 
@@ -129,14 +126,15 @@ Logistic Regression
    :toctree: api/
 
    LogisticRegression.object_type
+   LogisticRegression.classes_
+
 _____
 
 Tree-based algorithms
---------------------------
-
+---------------------
 
 Dummy Tree
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~
 
 .. currentmodule:: verticapy.machine_learning.vertica
    
@@ -151,7 +149,6 @@ Dummy Tree
 
 .. autosummary::
    :toctree: api/
-
 
    DummyTreeClassifier.classification_report
    DummyTreeClassifier.confusion_matrix
@@ -177,11 +174,13 @@ Dummy Tree
    DummyTreeClassifier.prc_curve
    DummyTreeClassifier.predict
    DummyTreeClassifier.predict_proba
+   DummyTreeClassifier.register
    DummyTreeClassifier.report
    DummyTreeClassifier.roc_curve
    DummyTreeClassifier.score
    DummyTreeClassifier.set_params
    DummyTreeClassifier.summarize
+   DummyTreeClassifier.to_binary
    DummyTreeClassifier.to_graphviz
    DummyTreeClassifier.to_memmodel
    DummyTreeClassifier.to_pmml
@@ -239,11 +238,14 @@ Decision Tree
    DecisionTreeClassifier.prc_curve
    DecisionTreeClassifier.predict
    DecisionTreeClassifier.predict_proba
+   DecisionTreeClassifier.register
    DecisionTreeClassifier.report
    DecisionTreeClassifier.roc_curve
    DecisionTreeClassifier.score
    DecisionTreeClassifier.set_params
    DecisionTreeClassifier.summarize
+   DecisionTreeClassifier.to_binary
+   DecisionTreeClassifier.to_graphviz
    DecisionTreeClassifier.to_memmodel
    DecisionTreeClassifier.to_pmml
    DecisionTreeClassifier.to_python
@@ -299,11 +301,13 @@ Random Forest Classifier
    RandomForestClassifier.prc_curve
    RandomForestClassifier.predict
    RandomForestClassifier.predict_proba
+   RandomForestClassifier.register
    RandomForestClassifier.report
    RandomForestClassifier.roc_curve
    RandomForestClassifier.score
    RandomForestClassifier.set_params
    RandomForestClassifier.summarize
+   RandomForestClassifier.to_binary
    RandomForestClassifier.to_graphviz
    RandomForestClassifier.to_memmodel
    RandomForestClassifier.to_pmml
@@ -360,12 +364,15 @@ XGBoost Classifier
    XGBClassifier.prc_curve
    XGBClassifier.predict
    XGBClassifier.predict_proba
+   XGBClassifier.register
    XGBClassifier.report
    XGBClassifier.roc_curve
    XGBClassifier.score
    XGBClassifier.set_params
    XGBClassifier.summarize
+   XGBClassifier.to_binary
    XGBClassifier.to_graphviz
+   XGBClassifier.to_json
    XGBClassifier.to_memmodel
    XGBClassifier.to_pmml
    XGBClassifier.to_python
@@ -421,11 +428,14 @@ Naive Bayes
    NaiveBayes.prc_curve
    NaiveBayes.predict
    NaiveBayes.predict_proba
+   NaiveBayes.register
    NaiveBayes.report
    NaiveBayes.roc_curve
    NaiveBayes.score
    NaiveBayes.set_params
    NaiveBayes.summarize
+   NaiveBayes.to_binary
+   NaiveBayes.to_memmodel
    NaiveBayes.to_pmml
    NaiveBayes.to_python
    NaiveBayes.to_sql
@@ -479,11 +489,13 @@ K-Nearest Neighbors Classifier (Beta)
    KNeighborsClassifier.prc_curve
    KNeighborsClassifier.predict
    KNeighborsClassifier.predict_proba
+   KNeighborsClassifier.register
    KNeighborsClassifier.report
    KNeighborsClassifier.roc_curve
    KNeighborsClassifier.score
    KNeighborsClassifier.set_params
    KNeighborsClassifier.summarize
+   KNeighborsClassifier.to_binary
    KNeighborsClassifier.to_pmml
    KNeighborsClassifier.to_python
    KNeighborsClassifier.to_sql
@@ -535,11 +547,14 @@ Nearest Centroid (Beta)
    NearestCentroid.prc_curve
    NearestCentroid.predict
    NearestCentroid.predict_proba
+   NearestCentroid.register
    NearestCentroid.report
    NearestCentroid.roc_curve
    NearestCentroid.score
    NearestCentroid.set_params
    NearestCentroid.summarize
+   NearestCentroid.to_binary
+   NearestCentroid.to_memmodel
    NearestCentroid.to_pmml
    NearestCentroid.to_python
    NearestCentroid.to_sql

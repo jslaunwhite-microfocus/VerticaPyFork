@@ -807,7 +807,7 @@ class CountVectorizer(VerticaModel):
     the occurences of each word in
     the data.
 
-    .. deprecated:: version 1.1.0.
+    .. deprecated:: version 1.0.0.
 
         This feature is deprecated and
         it will be removed on VerticaPy
@@ -858,7 +858,7 @@ class CountVectorizer(VerticaModel):
     .. note::
 
         All attributes can be accessed using the
-        :py:meth:`verticapy.machine_learning.vertica.preprocessing.Preprocessing.get_attributes``
+        :py:meth:`verticapy.machine_learning.vertica.preprocessing.Preprocessing.get_attributes`
         method.
     """
 
@@ -1144,13 +1144,13 @@ class Scaler(Preprocessing):
     .. note::
 
         All attributes can be accessed using the
-        :py:meth:`verticapy.machine_learning.vertica.preprocessing.Preprocessing.get_attributes``
+        :py:meth:`verticapy.machine_learning.vertica.preprocessing.Preprocessing.get_attributes`
         method.
 
     .. note::
 
         Several other attributes can be accessed by using the
-        :py:meth:`verticapy.machine_learning.vertica.preprocessing.Preprocessing.get_vertica_attributes``
+        :py:meth:`verticapy.machine_learning.vertica.preprocessing.Preprocessing.get_vertica_attributes`
         method.
 
     Examples
@@ -1614,13 +1614,13 @@ class OneHotEncoder(Preprocessing):
     .. note::
 
         All attributes can be accessed using the
-        :py:meth:`verticapy.machine_learning.vertica.preprocessing.Preprocessing.get_attributes``
+        :py:meth:`verticapy.machine_learning.vertica.preprocessing.Preprocessing.get_attributes`
         method.
 
     .. note::
 
         Several other attributes can be accessed by using the
-        :py:meth:`verticapy.machine_learning.vertica.preprocessing.Preprocessing.get_vertica_attributes``
+        :py:meth:`verticapy.machine_learning.vertica.preprocessing.Preprocessing.get_vertica_attributes`
         method.
 
     Examples

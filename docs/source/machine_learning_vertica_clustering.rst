@@ -7,11 +7,10 @@ Clustering & Anomaly Detection
 ______
 
 Clustering
------------
-
+----------
 
 K-Means
-~~~~~~~~~~~~~~~~
+~~~~~~~
 
 .. currentmodule:: verticapy.machine_learning.vertica
    
@@ -45,6 +44,7 @@ K-Means
    KMeans.register
    KMeans.set_params
    KMeans.summarize
+   KMeans.to_binary
    KMeans.to_memmodel
    KMeans.to_pmml
    KMeans.to_python
@@ -59,7 +59,7 @@ K-Means
    KMeans.object_type
 
 K-Prototype
-~~~~~~~~~~~~~
+~~~~~~~~~~~
 
 .. currentmodule:: verticapy.machine_learning.vertica
    
@@ -75,10 +75,40 @@ K-Prototype
 .. autosummary::
    :toctree: api/
 
+   KPrototypes.contour
+   KPrototypes.deploySQL
+   KPrototypes.does_model_exists
+   KPrototypes.drop
+   KPrototypes.export_models
+   KPrototypes.fit
+   KPrototypes.get_attributes
+   KPrototypes.get_match_index
+   KPrototypes.get_params
+   KPrototypes.get_plotting_lib
+   KPrototypes.get_vertica_attributes
+   KPrototypes.import_models
+   KPrototypes.plot
+   KPrototypes.plot_voronoi
+   KPrototypes.predict
+   KPrototypes.register
+   KPrototypes.set_params
+   KPrototypes.summarize
+   KPrototypes.to_binary
    KPrototypes.to_memmodel
+   KPrototypes.to_pmml
+   KPrototypes.to_python
+   KPrototypes.to_sql
+   KPrototypes.to_tf
+
+**Attributes:**
+
+.. autosummary::
+   :toctree: api/
+
+   KPrototypes.object_type
 
 Bisecting K-Means
-~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
 
 .. currentmodule:: verticapy.machine_learning.vertica
    
@@ -105,6 +135,8 @@ Bisecting K-Means
    BisectingKMeans.get_match_index
    BisectingKMeans.get_params
    BisectingKMeans.get_plotting_lib
+   BisectingKMeans.get_score
+   BisectingKMeans.get_tree
    BisectingKMeans.get_vertica_attributes
    BisectingKMeans.import_models
    BisectingKMeans.plot
@@ -113,7 +145,9 @@ Bisecting K-Means
    BisectingKMeans.predict
    BisectingKMeans.register
    BisectingKMeans.set_params
-   BisectingKMeans.summarize  
+   BisectingKMeans.summarize
+   BisectingKMeans.to_binary
+   BisectingKMeans.to_graphviz
    BisectingKMeans.to_memmodel
    BisectingKMeans.to_pmml
    BisectingKMeans.to_python
@@ -127,10 +161,8 @@ Bisecting K-Means
 
    BisectingKMeans.object_type
 
-
 DBSCAN (Beta)
-~~~~~~~~~~~~~~
-
+~~~~~~~~~~~~~
 
 .. currentmodule:: verticapy.machine_learning.vertica
    
@@ -163,10 +195,18 @@ DBSCAN (Beta)
    DBSCAN.register
    DBSCAN.set_params
    DBSCAN.summarize
+   DBSCAN.to_binary
    DBSCAN.to_pmml
    DBSCAN.to_python
    DBSCAN.to_sql
    DBSCAN.to_tf
+
+**Attributes:**
+
+.. autosummary::
+   :toctree: api/
+
+   DBSCAN.object_type
 
 _____________
 
@@ -191,6 +231,7 @@ Isolation Forest
    :toctree: api/
 
    IsolationForest.contour
+   IsolationForest.decision_function
    IsolationForest.deploySQL
    IsolationForest.does_model_exists
    IsolationForest.drop
@@ -201,13 +242,18 @@ Isolation Forest
    IsolationForest.get_match_index
    IsolationForest.get_params
    IsolationForest.get_plotting_lib
+   IsolationForest.get_score
+   IsolationForest.get_tree
    IsolationForest.get_vertica_attributes
    IsolationForest.import_models
    IsolationForest.plot
+   IsolationForest.plot_tree
    IsolationForest.predict
    IsolationForest.register
    IsolationForest.set_params
    IsolationForest.summarize
+   IsolationForest.to_binary
+   IsolationForest.to_graphviz
    IsolationForest.to_memmodel
    IsolationForest.to_pmml
    IsolationForest.to_python
@@ -232,17 +278,38 @@ Local Outlier Factor (Beta)
 
    neighbors.LocalOutlierFactor
 
-.. currentmodule:: verticapy.machine_learning.vertica.neighbors.LocalOutlierFactor
+.. currentmodule:: verticapy.machine_learning.vertica.neighbors
 
 **Methods:**
 
 .. autosummary::
    :toctree: api/
 
-   drop
-   fit
-   plot
-   predict
-   
+   LocalOutlierFactor.contour
+   LocalOutlierFactor.deploySQL
+   LocalOutlierFactor.does_model_exists
+   LocalOutlierFactor.drop
+   LocalOutlierFactor.export_models
+   LocalOutlierFactor.fit
+   LocalOutlierFactor.get_attributes
+   LocalOutlierFactor.get_match_index
+   LocalOutlierFactor.get_params
+   LocalOutlierFactor.get_plotting_lib
+   LocalOutlierFactor.get_vertica_attributes
+   LocalOutlierFactor.import_models
+   LocalOutlierFactor.predict
+   LocalOutlierFactor.register
+   LocalOutlierFactor.set_params
+   LocalOutlierFactor.summarize
+   LocalOutlierFactor.to_binary
+   LocalOutlierFactor.to_pmml
+   LocalOutlierFactor.to_python
+   LocalOutlierFactor.to_sql
+   LocalOutlierFactor.to_tf
 
+**Attributes:**
 
+.. autosummary::
+   :toctree: api/
+
+   LocalOutlierFactor.object_type
